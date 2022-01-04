@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/r_style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="fixed-header">
+        <nav>
+            <div class="header">
+                <img class="logo" src="/static/blood_logo.png">
+                <h1><a href="/">Blood Bank Management System</a></h1>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Register here! </h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="did">Donor ID*</label>
+                <span>
+                    <input type="text" name="did" placeholder="Donor ID">
+                </span>
+                
+                <label for="first">First Name*</label>
+                <span>
+                    <input type="text" name="first" placeholder="First Name"/>
+                </span>
+
+                <label for="middle">Middle Name</label>
+                <span>
+                    <input type="text" name="middle" placeholder="Middle Name"/>
+                </span>
+
+                <label for="last">Last Name*</label>
+                <span>
+                    <input type="text" name="last" placeholder="Last Name"/>
+                </span>
+
+                <label for="vid">Agency ID*</label>
+                <span>
+                    <input type="text" name="vid" placeholder="Volunteer agency"/>
+                </span>
+                
+                <label for="dob">Date Of Birth*</label>
+                <span>
+                    <input type="text" name="dob" placeholder="yyyy-mm-dd"/>
+                </span>
+
+                <label for="phone">Phone Number*</label>
+                <span>
+                    <input type="text" name="phone" placeholder="xxxxxxxxxx"/>
+                </span>
+
+                <label for="gender">Gender</label>
+                <span>
+                    <input type="text" name="gender" placeholder="M/F"/>
+                </span>
+                
+                <label for="type">Blood type*</label>
+                <span>
+                    <input type="text" name="type" placeholder="Blood type"/>
+                </span>
+
+                <label for="street">Street*</label>
+                <span>
+                    <input type="text" name="street" placeholder="Street"/>
+                </span>
+
+                <label for="local">Locality*</label>
+                <span>
+                    <input type="text" name="local" placeholder="Locality"/>
+                </span>
+
+                <label for="city">City*</label>
+                <span>
+                    <input type="text" name="city" placeholder="City"/>
+                </span>
+            </div>
+            <input type="submit" value="Submit" class="btn"/>
+        </form>
+    </div>
+
+</body>
+</html>

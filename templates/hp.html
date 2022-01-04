@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/t_style.css">
+    <link rel="stylesheet" href="../static/h_style.css">
+    <title>Patient Details</title>
+</head>
+<body>
+    <div class="fixed-header">
+        <nav>
+            <div class="header">
+                <img class="logo" src="/static/blood_logo.png">
+                <h1 class="head"><a href="/">Blood Bank Management System</a></h1>
+                <div class="btns">
+                <div class="dropdown">
+                    <button class="dropbtn">Change Hospital</button>
+                    <div class="dropdown-content">
+                        <a href="/HP0001"><label>HP0001</label></a>
+                        <a href="/HP0002"><label>HP0002</label></a>
+                        <a href="/HP0003"><label>HP0003</label></a>
+                        <a href="/HP0004"><label>HP0004</label></a>
+                        <a href="/HP0005"><label>HP0005</label></a>
+                        <a href="/HP0006"><label>HP0006</label></a>
+                        <a href="/HP0007"><label>HP0007</label></a>
+                        <a href="/HP0008"><label>HP0008</label></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1>{{data[0][0]}}</h1>
+            
+    <table class='styled-table'>
+        <thead>
+            <th scope="col">Patient ID</th>
+            <th scope="col">Patient Name</th>
+            <th scope="col">Blood Type</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Address</th>
+        </thead>
+
+        {% for pat in data %}
+        <tr>        
+            <th scope="col">{{pat[1]}}</th>
+            <td>{{pat[2]}}</td>
+            <td>{{pat[3]}}</td>
+            <td>{{pat[4]}}</td>
+            <td>{{pat[5]}}</td>
+            <td>{{pat[6]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

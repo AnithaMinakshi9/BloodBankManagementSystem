@@ -1,0 +1,112 @@
+body{        
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background: #e9bebe;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #333;
+}
+.fixed-header{
+    width: 100%;
+    position: fixed;        
+    background: rgb(0, 0, 0);
+    padding: 10px 0;
+    color: #fff;
+    top:0;
+    left:0;
+}
+
+.header{
+    padding: 10px;
+    margin: auto;
+}
+.header img {
+    float: left;
+    height: 70px;
+    padding: 5px 5px;
+    top:0px;
+  }
+  
+.header h1 {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.head{color:white}
+
+.btns{
+    position: absolute;
+    right:50px;
+    top: 25px;
+    padding: 10px 1px;
+}
+
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
+nav a{
+    margin-right: 0px;
+    text-decoration: none;
+    display: inline-block;
+    color: white; 
+}
+
+.dropbtn {
+    background-color: #8e3e45;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    right:10px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #8e3e45;}

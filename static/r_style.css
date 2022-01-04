@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: #e9bebe;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header h1 {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    color:white;
+}
+
+a:link {
+    color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
+h1{
+    color:crimson;
+    margin-top: 15px;
+    font-size: x-large;
+}
+
+.form-group{
+    margin: 1rem 0;
+    
+}
+.container{
+    max-width: 750px;
+    margin: 10rem;
+    overflow: auto;
+    padding:2rem 2rem;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 2%;
+
+}
+
+label{
+    float:left;
+    font-size:larger;
+    height: 2px;
+    width: 300px;
+}
+
+span{
+    display: block;
+    overflow: hidden;
+    padding: 4px 4px 10px 6px;
+}
+
+input{
+    width:300px;
+    height: 35px;
+    
+}
+
+.btn{
+    display: block;
+    width: 20%;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: auto;
+    outline: none;
+    margin-right: 50rem;
+    margin-top: 2rem;
+    font-size: large;
+}
+
+.fixed-header{
+    width: 100%;
+    position: fixed;        
+    background: rgb(0, 0, 0);
+    padding: 10px 0;
+    color: #fff;
+    top:0;
+    left:0;
+}
+nav a{
+    margin-right: 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header{
+    padding: 10px;
+    margin: auto;
+}
+.header img {
+    float: left;
+    height: 70px;
+    padding: 5px 5px;
+    top:0px;
+  }
+  

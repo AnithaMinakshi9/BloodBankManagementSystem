@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/t_style.css">
+    <link rel="stylesheet" href="../static/h_style.css">
+    <title>Blood Bank and Stock</title>
+</head>
+<body>
+    <div class="fixed-header">
+        <nav>
+            <div class="header">
+                <img class="logo" src="/static/blood_logo.png">
+                <h1 class="head"><a href="/">Blood Bank Management System</a></h1>
+                <div class="btns">
+                <div class="dropdown">
+                    <button class="dropbtn">Change Branch</button>
+                    <div class="dropdown-content">
+                      <a href="/bb10">BB10</a>
+                      <a href="/bb11">BB11</a>
+                      <a href="/bb12">BB12</a>
+                      <a href="/bb13">BB13</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+            
+    <table class='styled-table'>
+        <thead>
+            <th scope="col">Branch ID</th>
+            <th scope="col">Branch Name</th>
+            <th scope="col">Order Number</th>
+            <th scope="col">Issues</th>
+            <th scope="col">Employee ID</th>
+            <th scope="col">Employee Name</th>
+        </thead>
+        {% for branch in data %}
+        <tr>        
+            <th scope="col">{{branch[0]}}</th>
+            <td>{{branch[1]}}</td>
+            <td>{{branch[2]}}</td>
+            <td>{{branch[3]}}</td>
+            <td>{{branch[4]}}</td>
+            <td>{{branch[5]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <label class="stock">STOCK AVAILABILITY</label>
+    <table class='styled-table'>
+        <thead>
+            <th scope="col">Blood Type</th>
+            <th scope="col">Count</th>
+            
+        </thead>
+        {% for row in data1 %}
+        <tr>        
+            <th scope="col">{{row[0]}}</th>
+            <td>{{row[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

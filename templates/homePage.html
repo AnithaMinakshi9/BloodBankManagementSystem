@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/h_style.css">
+        <link rel="stylesheet" href="../static/t_style.css">
+        <title>Blood Bank Management System</title>
+    </head>
+
+<body>
+    <div class="fixed-header">
+            <nav>
+                <div class="header">
+                    <img class="logo" src="/static/blood_logo.png">
+                    <h1><a href="/">Blood Bank Management System</a></h1>
+                </div>
+                <div class="btns">
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Donor</button>
+                        <div class="dropdown-content">
+                          <a href="/donorList">Display list</a>
+                          <a href="/register">Register</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Manager</button>
+                        <div class="dropdown-content">
+                          <a href="/bb10">BB10</a>
+                          <a href="/bb11">BB11</a>
+                          <a href="/bb12">BB12</a>
+                          <a href="/bb13">BB13</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Hospital Admin</button>
+                        <div class="dropdown-content">
+                            <a href="/HP0001"><label>HP0001</label></a>
+                            <a href="/HP0002"><label>HP0002</label></a>
+                            <a href="/HP0003"><label>HP0003</label></a>
+                            <a href="/HP0004"><label>HP0004</label></a>
+                            <a href="/HP0005"><label>HP0005</label></a>
+                            <a href="/HP0006"><label>HP0006</label></a>
+                            <a href="/HP0007"><label>HP0007</label></a>
+                            <a href="/HP0008"><label>HP0008</label></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    <div class="bod">
+        <h1>LIST OF HOSPITALS</h1>
+        <table class='styled-table'>
+            <thead>
+                <th scope="col">Hospital ID</th>
+                <th scope="col">Hospital Name</th>
+                <th scope="col">Hospital Phone</th>
+                <th scope="col">Hospital Address</th>
+            </thead>
+            {% for h in data %}
+            <tr>        
+                <th scope="col">{{h[0]}}</th>
+                <td>{{h[1]}}</td>
+                <td>{{h[2]}}</td>
+                <td>{{h[3]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h1>LIST OF VOLUNTEER AGENCIES</h1>
+        <table class='styled-table'>
+            <thead>
+                <th scope="col">Agency ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Place</th>
+            </thead>
+            {% for h in data1 %}
+            <tr>        
+                <th scope="col">{{h[0]}}</th>
+                <td>{{h[1]}}</td>
+                <td>{{h[2]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    
+    </div>    
+</body>
+</html>
